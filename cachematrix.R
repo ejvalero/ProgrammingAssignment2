@@ -18,7 +18,6 @@ makeCacheMatrix <- function(x = matrix()) {
          getinv = getinv)
 }
 
-
 # Next function bellow cacheSolve() computes the inverse of the special "matrix" 
 # returned by function makeCacheMatrix() above.
 cacheSolve <- function(x, ...) {

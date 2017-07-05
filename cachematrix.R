@@ -1,6 +1,6 @@
 ## Calculating the inverse of a matrix x
 
-# Next function makeCacheMatrix() creates a special "matrix" object
+# Bellow function makeCacheMatrix() creates a special "matrix" object
 # that can cache its inverse.
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -18,14 +18,13 @@ makeCacheMatrix <- function(x = matrix()) {
          getinv = getinv)
 }
 
-## Write a short comment describing this function
-#Next function cacheSolve() computes the inverse of the special "matrix" 
-#returned by function makeCacheMatrix() above.
 
+# Next function bellow cacheSolve() computes the inverse of the special "matrix" 
+# returned by function makeCacheMatrix() above.
 cacheSolve <- function(x, ...) {
     m <- x$getinv()
         if(!is.null(m)) {
-                message("\nCached data:")
+                message("\nCached inverse matrix of data: ")
                 return(m)
         }
     data <- x$get()
